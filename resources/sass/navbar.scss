@@ -1,0 +1,64 @@
+.navbar {
+    background: #2E2E37;
+    height: 80px;
+
+    @media screen and (max-width: 991px) {
+        height: 110px;
+    }
+
+    img {
+        width: auto;
+        height: 80px;
+    }
+
+    .offcanvas {
+        background: #2E2E37;
+
+        .navbar-nav {
+            width: calc(100% - 106.667px);
+
+            a {
+                color: #fff;
+                font-size: .9rem;
+                font-weight: 300;
+
+                &:hover {
+                    color: #f5bc41;
+                    transition: all .2s linear;
+                }
+
+                &:focus {
+                    display: block;
+                    color: #f5bc41;
+                    box-shadow: inset 0 -3px 0 #f5bc41;
+                }
+            }
+
+            .dropdown-item {
+
+                &:hover {
+                    box-shadow: 0 0 0 #000;
+                    color: #fff;
+                }
+
+                &::after {
+                    position: absolute;
+                    top: -10px;
+                    left: 21px;
+                    border-left: 15px solid transparent;
+                    border-right: 15px solid transparent;
+                    border-bottom: 15px solid #343a40;
+                    content: '';
+                    display: block;
+                    z-index: 2;
+                    transition: all 200ms linear;
+
+                    img {
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+            }
+        }
+    }
+}
