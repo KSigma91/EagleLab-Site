@@ -17,8 +17,9 @@ Route::get('/', function () {
     return view('eaglelab.layouts.app');
 });
 
-Route::get('upload', 'ImageController@create')->name('image.create');
-Route::post('uploaded', 'ImageController@index')->name('image.index');
+// Route::get('upload', 'ImageController@create')->name('image.create');
+// Route::post('uploaded', 'ImageController@index')->name('image.index');
+Route::resource('pictures', 'PictureController');
 
 Route::get("{any?}", function () {
     return view('guest.layouts.app');

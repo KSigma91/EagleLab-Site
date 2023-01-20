@@ -12651,3 +12651,10 @@ fieldset:disabled .btn {
   height: 80px;
 }
 
+#preview {
+  width: 500px;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+

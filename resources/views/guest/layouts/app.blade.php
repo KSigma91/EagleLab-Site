@@ -62,7 +62,7 @@
                                 <a class="nav-link" href="{{ url('/about') }}">Chi siamo</a>
                             </li>
                         </ul>
-                        <a class="btn btn-sm btn-dark border-0 rounded-0 text-white" href="{{ url('/') }}">Modifica galleria</a>
+                        <a class="btn btn-sm btn-dark border-0 rounded-0 text-white" href="{{ route('pictures.index') }}">Modifica galleria</a>
                     </div>
                 </div>
             </div>

@@ -31,22 +31,16 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav d-flex justify-content-center gap-4">
+                        <ul class="navbar-nav d-flex justify-content-start">
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ url('guest.layouts.app') }}">{{ __('Torna al sito') }}</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('image.index') }}">{{ __('Lista immagini') }}</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('image.create') }}">{{ __('Aggiungi immagini') }} +</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
-        <main role="main">
+        <main role="main" class="py-5">
             @yield('content')
         </main>
     </body>
