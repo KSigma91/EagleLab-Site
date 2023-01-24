@@ -16,7 +16,7 @@
                                 {{ date('d-m-y', strtotime($picture->created_at)) }}
                             </li>
                             <li>
-                                <img id="preview" src="{{ asset('storage/' . $picture->image) }}" alt="">
+                                <img id="preview" src="{{ Session::get('image') }}" alt="">
                                 {{ $picture->image }}
                             </li>
                         </ul>

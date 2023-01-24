@@ -14,8 +14,8 @@
     <body>
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid position-relative">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="{{ asset('images/EagleLab_Navbar.png') }}" alt="EagleLab-logo">
+                <a class="navbar-brand" href="{{ url('/home') }}">
+                    <img src="{{ asset('images/EagleLab-Navbar.png') }}" alt="EagleLab-logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
@@ -44,18 +44,18 @@
                                     Galleria <i class="fas fa-chevron-down" style="font-size: .6rem;"></i>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-dark border-0 rounded-0 p-3 shadow" role="menu" aria-labelledby="dLabel">
-                                    <li>
+                                    {{-- <li>
                                         <a class="dropdown-item d-flex justify-content-start align-items-center gap-3 p-2 py-3" href="{{ url('/gallery') }}">
-                                            <img src="../assets/MavicAir2S.jpg" alt="Mavic-Air-2s">
+                                            <img src="images/MavicAir2S.jpg" alt="Mavic-Air-2s">
                                             Dji Mavic Air 2S
                                         </a>
                                     </li>
                                     <li>
                                         <a class="dropdown-item d-flex justify-content-start align-items-center gap-3 p-2 py-3" href="{{ url('/gallery') }}">
-                                            <img src="../assets/Spark.jpg" alt="Spark">
+                                            <img src="images/Spark.jpg" alt="Spark">
                                             Dji Spark
                                         </a>
-                                    </li>
+                                    </li> --}}
                                 </ul>
                             </li>
                             <li class="nav-item">
